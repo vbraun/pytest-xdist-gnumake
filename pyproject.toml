@@ -1,0 +1,19 @@
+[project]
+name = 'pytest-xdist-gnumake'
+version = '1.0.0'
+dependencies = [
+    'pytest',
+    'pytest-xdist',
+    'gnumake-tokenpool',
+]
+
+
+[project.entry-points."pytest11"]
+tracker = "pytest_xdist_gnumake.plugin"
+
+
+[project.optional-dependencies]
+dev = [
+    'mypy',
+    'filelock',
+]
