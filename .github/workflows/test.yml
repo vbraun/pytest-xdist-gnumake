@@ -1,0 +1,19 @@
+name: pytest-xdist-plugin
+
+
+on:
+  push:
+
+
+jobs:
+  test:
+    name: Run testsuite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v4
+      - name: Run tox
+        run:
+            python -m pip install --user tox
+            tox
+
