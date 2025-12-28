@@ -1,5 +1,7 @@
 # pytest-xdist-gnumake
 
+[![status-badge](https://crowci.vbraun.cc/api/badges/1/status.svg)](https://crowci.vbraun.cc/repos/1)
+
 ## Integration of pytest-xdist with GNU Make job server
 
 Imagine you have a *Makefile* target that runs pytest in addition to
